@@ -77,7 +77,7 @@ The included benchmark results were run on my Dell XPS13 with i7-7500U and 16GB
 of RAM. Below is a comparison of every parser for each file.
 
 Benchee generated HTML results are located in `/docs/` and are accessible at
-https://coffei.github.io/elixir_xml_parser_benchmark/docs/.
+https://coffei.github.io/elixir_xml_parser_benchmark/.
 
 ```
 ##### With input small #####
