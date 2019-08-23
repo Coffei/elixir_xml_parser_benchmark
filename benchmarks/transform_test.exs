@@ -34,6 +34,6 @@ Benchee.run(tests,
   inputs: inputs,
   formatters: [
     Benchee.Formatters.Console,
-    {Benchee.Formatters.HTML, auto_open: false}
+    {Benchee.Formatters.HTML, file: "docs/index.html", auto_open: false}
   ]
 )

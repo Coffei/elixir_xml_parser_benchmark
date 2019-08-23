@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+  <span class="input-label">
+    big
+  </span>
+
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.8.2</li>
+    <li>Erlang: 21.0.2</li>
+    <li>Operating system: Linux</li>
+    <li>Available memory: 15.39 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz</li>
+    <li>Number of Available Cores: 4</li>
+  </ul>
+</article>
+
+
+    
+      <article>
+        <h2>
+          <a name="run_time" href="#run_time">Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath Run Time</a>
+          <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+            <i
+              class="benchee-help-icon icon-question-circle-o"
+              title="Graphs showing the individual run time distribution for Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath.
+  Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+  Raw Run Times shows all individual recorded run times in the order they were recorded in."
+            ></i>
+          </a>
+        </h2>
+
+        <section>
+          <table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      
+        <th>Iterations per Second</th>
+      
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>Median</th>
+      <th>Mode</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+      <tr>
+        
+          <td class="text-left">Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath</td>
+        
+        
+          <td>66.73</td>
+          <td>14.98 ms</td>
+          <td>±2.88%</td>
+          <td>14.89 ms</td>
+          <td>14.94 ms</td>
+          <td>14.19 ms</td>
+          <td>17.60 ms</td>
+        
+        <td>334</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+        </section>
+
+        <section class="benchee-plot-container">
+          <div id="run-times-histogram" class="plot"></div>
+        </section>
+        <section class="benchee-plot-container">
+          <div id="raw-run-times" class="plot"></div>
+        </section>
+      </article>
+    
+
+    
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 1.0.1 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 1.0.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var scenario = {"name":"Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath","input_name":"big","run_time_data":{"statistics":{"absolute_difference":13889712.9838255,"average":14984999.874251498,"ips":66.73340062673508,"maximum":17597308.0,"median":14891661.5,"minimum":14189094.0,"mode":14943415.0,"percentiles":{"50":14891661.5,"99":16713717.799999993},"relative_less":0.07309221886000909,"relative_more":13.681346873806968,"sample_size":334,"std_dev":431371.53971208585,"std_dev_ips":1.9210470483915232,"std_dev_ratio":0.028786889778578188},"samples":[14884116.0,14891243.0,15257135.0,14912606.0,15118771.0,15191273.0,15393308.0,15223443.0,14854767.0,15286874.0,14870582.0,14901090.0,15492014.0,14940132.0,14731189.0,16809153.0,15549160.0,15175871.0,14875430.0,15729985.0,14870763.0,14557423.0,14700924.0,14922541.0,14785542.0,14827416.0,14837813.0,14871770.0,14887521.0,14802703.0,14792976.0,14594390.0,14813470.0,16536481.0,16474013.0,15540740.0,14829286.0,14711692.0,14872974.0,14896408.0,14821789.0,14723070.0,14929531.0,14886388.0,14946723.0,15153603.0,14810076.0,15312926.0,14973732.0,15257677.0,14905572.0,15181287.0,14798192.0,15068772.0,14935873.0,14826771.0,14718523.0,14826637.0,14785488.0,14615369.0,14693288.0,14953590.0,14992480.0,15007778.0,14794410.0,14537169.0,14884222.0,14937878.0,14996226.0,14743903.0,14932295.0,15123731.0,14902844.0,14790651.0,15068815.0,14915290.0,14736046.0,14981193.0,14589922.0,15071658.0,15248594.0,14900499.0,15764439.0,15086516.0,15282051.0,15266837.0,15704188.0,14875684.0,15000783.0,14891036.0,14853363.0,16189158.0,14938285.0,14811578.0,14601005.0,14776948.0,14585619.0,14334722.0,14405297.0,14403683.0,16301399.0,15189481.0,15135250.0,14692786.0,14506598.0,14353781.0,14544510.0,14592250.0,14473475.0,15217796.0,15134691.0,14671426.0,15024581.0,14943415.0,14915565.0,14509225.0,14990086.0,14842105.0,14874283.0,14697841.0,14450536.0,14943415.0,15119775.0,14948066.0,15161975.0,15041101.0,15097065.0,15012886.0,15225796.0,14806462.0,14640723.0,15373473.0,15041694.0,15129826.0,15027679.0,14932087.0,14948322.0,14189094.0,15232051.0,14955862.0,14893735.0,14820724.0,14774278.0,14695067.0,14903829.0,14591917.0,14874526.0,14486915.0,14844871.0,15190115.0,14550459.0,14468699.0,14627119.0,15805550.0,15808143.0,14855241.0,14607254.0,14481478.0,14806876.0,14761682.0,14927387.0,14824390.0,14797145.0,14730858.0,14696144.0,1.46826e7,14600383.0,16113873.0,14906201.0,16171228.0,15292156.0,14930615.0,14471486.0,14931852.0,14717941.0,15244665.0,14821580.0,14879958.0,14660607.0,14930375.0,14982474.0,15156053.0,15335131.0,14805291.0,16896685.0,14432421.0,15221085.0,14827606.0,15249732.0,14921986.0,15198502.0,14746485.0,16245514.0,14917403.0,14637861.0,14773151.0,14996794.0,14887509.0,15483796.0,14615145.0,14572551.0,14940519.0,14723834.0,14796316.0,14672235.0,15725029.0,16033304.0,14716142.0,15031614.0,14745786.0,14905698.0,14735709.0,14809995.0,14921339.0,15012148.0,14619897.0,14812156.0,14683915.0,14461575.0,14715258.0,14892494.0,14555432.0,14700048.0,14561309.0,14705971.0,14721797.0,14648397.0,14671370.0,14712386.0,15100052.0,14621722.0,14760227.0,15996046.0,14586409.0,16462048.0,15132277.0,16120882.0,14717578.0,14822335.0,14869517.0,15197763.0,14865712.0,14817290.0,14566618.0,15276250.0,15981633.0,14829541.0,14678552.0,14768819.0,14655958.0,14629466.0,15967122.0,14806815.0,14901245.0,14894463.0,15342392.0,15291981.0,15122508.0,14932420.0,15089924.0,14740493.0,15092755.0,14755782.0,15167798.0,14866164.0,14726038.0,14888212.0,15072270.0,15336166.0,14842606.0,14804293.0,14778775.0,14995290.0,15303192.0,15019630.0,15116553.0,14742248.0,14860134.0,14685443.0,15009946.0,15005355.0,15059140.0,14743202.0,15478135.0,14882745.0,14817315.0,14623606.0,16283418.0,15026805.0,15248250.0,14968918.0,14587619.0,17597308.0,14765830.0,15110802.0,15018970.0,14690440.0,14511451.0,14606648.0,14713364.0,16270869.0,15233284.0,15888205.0,14923308.0,15111573.0,14925052.0,14946314.0,14689206.0,14775688.0,15122930.0,15030395.0,15024698.0,15052487.0,15067261.0,15257891.0,15022413.0,14780780.0,14953699.0,14609285.0,14612193.0,15248335.0,15160137.0,14770339.0,14942626.0,14876995.0,14652680.0,14615555.0,14892080.0,15970950.0,14855159.0,14852608.0,14958308.0,14872897.0,15205221.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null};
+
+      var inputHeadline = " (big)"
+
+      
+        drawRunTimeHistogram(scenario, inputHeadline);
+        drawRawRunTimeChart(scenario, inputHeadline);
+      
+
+      
+    </script>
+  </body>
+</html>

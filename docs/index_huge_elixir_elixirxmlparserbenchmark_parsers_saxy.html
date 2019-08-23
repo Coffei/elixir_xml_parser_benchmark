@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+  <span class="input-label">
+    huge
+  </span>
+
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.8.2</li>
+    <li>Erlang: 21.0.2</li>
+    <li>Operating system: Linux</li>
+    <li>Available memory: 15.39 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz</li>
+    <li>Number of Available Cores: 4</li>
+  </ul>
+</article>
+
+
+    
+      <article>
+        <h2>
+          <a name="run_time" href="#run_time">Elixir.ElixirXmlParserBenchmark.Parsers.Saxy Run Time</a>
+          <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#individual">
+            <i
+              class="benchee-help-icon icon-question-circle-o"
+              title="Graphs showing the individual run time distribution for Elixir.ElixirXmlParserBenchmark.Parsers.Saxy.
+  Run Times Histogram shows the distribution of occurrences of specific run times in buckets.
+  Raw Run Times shows all individual recorded run times in the order they were recorded in."
+            ></i>
+          </a>
+        </h2>
+
+        <section>
+          <table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      
+        <th>Iterations per Second</th>
+      
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>Median</th>
+      <th>Mode</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+      <tr>
+        
+          <td class="text-left">Elixir.ElixirXmlParserBenchmark.Parsers.Saxy</td>
+        
+        
+          <td>12.99</td>
+          <td>76.98 ms</td>
+          <td>±2.12%</td>
+          <td>76.49 ms</td>
+          <td>none</td>
+          <td>74.61 ms</td>
+          <td>81.09 ms</td>
+        
+        <td>65</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+        </section>
+
+        <section class="benchee-plot-container">
+          <div id="run-times-histogram" class="plot"></div>
+        </section>
+        <section class="benchee-plot-container">
+          <div id="raw-run-times" class="plot"></div>
+        </section>
+      </article>
+    
+
+    
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 1.0.1 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 1.0.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var scenario = {"name":"Elixir.ElixirXmlParserBenchmark.Parsers.Saxy","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.Saxy","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":16347908.125301205,"average":76980665.8,"ips":12.990274760652953,"maximum":81087286.0,"median":76490293.0,"minimum":74608245.0,"mode":null,"percentiles":{"50":76490293.0,"99":81087286.0},"relative_less":0.7876361816904264,"relative_more":1.2696217152617315,"sample_size":65,"std_dev":1632860.350003199,"std_dev_ips":0.27554067468610416,"std_dev_ratio":0.021211304592317504},"samples":[76993606.0,76806258.0,76702444.0,78455711.0,75460492.0,78594210.0,75075747.0,79369048.0,78270258.0,78326056.0,78131728.0,78941121.0,77901294.0,78633781.0,78046699.0,77604779.0,79243903.0,74608245.0,76087698.0,80326906.0,75691290.0,75124845.0,76274652.0,74785717.0,76679410.0,74639743.0,75997689.0,79294477.0,75253782.0,77853348.0,75382596.0,75990805.0,78794705.0,79092080.0,78790181.0,75357356.0,77205326.0,78221804.0,74640553.0,76227505.0,78134594.0,78904738.0,81087286.0,78525147.0,78062317.0,79263139.0,76326466.0,76441754.0,75916157.0,74773143.0,75617872.0,75385451.0,75115364.0,76485431.0,76178419.0,77051205.0,79581698.0,76490293.0,75464775.0,76484608.0,75398120.0,75594073.0,75653180.0,75808094.0,75122105.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null};
+
+      var inputHeadline = " (huge)"
+
+      
+        drawRunTimeHistogram(scenario, inputHeadline);
+        drawRawRunTimeChart(scenario, inputHeadline);
+      
+
+      
+    </script>
+  </body>
+</html>

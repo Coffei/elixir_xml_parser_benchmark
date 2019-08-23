@@ -76,58 +76,59 @@ To start the performance benchmark run `mix run benchmarks/transform_test.exs`.
 The included benchmark results were run on my Dell XPS13 with i7-7500U and 16GB
 of RAM. Below is a comparison of every parser for each file.
 
-HTML results are also in `/benchmarks/output/`.
+Benchee generated HTML results are located in `/docs/` and are accessible at
+https://coffei.github.io/elixir_xml_parser_benchmark/docs/.
 
 ```
 ##### With input small #####
 Name                                                             ips        average  deviation         median         99th %
-Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                 76.06 K       13.15 μs   ±464.65%        8.28 μs       29.24 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple           72.57 K       13.78 μs   ±457.89%        8.57 μs       34.28 μs - 1.05x slower +0.63 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull          64.40 K       15.53 μs   ±448.48%       11.88 μs       27.37 μs - 1.18x slower +2.38 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax            48.08 K       20.80 μs   ±360.50%        9.51 μs      304.73 μs - 1.58x slower +7.65 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple         34.84 K       28.70 μs   ±254.43%       15.19 μs      434.61 μs - 2.18x slower +15.55 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                11.82 K       84.60 μs    ±78.39%       61.30 μs      372.30 μs - 6.43x slower +71.45 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple          10.47 K       95.49 μs    ±64.82%       73.85 μs      354.32 μs - 7.26x slower +82.34 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks              9.07 K      110.25 μs    ±47.19%       96.23 μs      320.78 μs - 8.38x slower +97.10 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath         3.69 K      270.84 μs    ±19.56%      267.04 μs      413.97 μs - 20.60x slower +257.69 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream        3.45 K      289.64 μs    ±16.93%      284.95 μs      443.20 μs - 22.03x slower +276.50 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                 75.17 K       13.30 μs   ±464.72%        8.41 μs       29.56 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple           71.75 K       13.94 μs   ±448.62%        8.71 μs       34.76 μs - 1.05x slower +0.63 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull          63.42 K       15.77 μs   ±466.67%       11.86 μs       30.10 μs - 1.19x slower +2.47 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax            47.36 K       21.11 μs   ±358.31%        9.62 μs      307.90 μs - 1.59x slower +7.81 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple         34.68 K       28.84 μs   ±254.32%       15.27 μs      438.17 μs - 2.17x slower +15.53 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                11.85 K       84.41 μs    ±77.97%       61.39 μs      375.60 μs - 6.35x slower +71.11 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple          10.22 K       97.82 μs    ±69.69%       76.39 μs      361.09 μs - 7.35x slower +84.52 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks              8.80 K      113.65 μs    ±46.45%       98.99 μs      325.72 μs - 8.54x slower +100.35 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath         3.66 K      272.96 μs    ±19.74%      268.82 μs      429.60 μs - 20.52x slower +259.66 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream        3.45 K      289.72 μs    ±17.51%      284.61 μs      459.57 μs - 21.78x slower +276.42 μs
 
 ##### With input medium #####
 Name                                                             ips        average  deviation         median         99th %
-Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull           8.50 K      117.60 μs    ±65.64%       95.35 μs      400.04 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple            7.43 K      134.50 μs    ±34.48%      117.53 μs      264.57 μs - 1.14x slower +16.90 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                  7.36 K      135.78 μs    ±34.81%      119.36 μs      283.86 μs - 1.15x slower +18.18 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax             4.86 K      205.67 μs    ±24.56%      206.40 μs      347.60 μs - 1.75x slower +88.07 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple          4.15 K      240.82 μs    ±21.65%      241.48 μs      381.45 μs - 2.05x slower +123.21 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                 1.44 K      696.07 μs    ±18.00%      672.90 μs     1054.40 μs - 5.92x slower +578.47 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple           1.25 K      801.35 μs    ±15.28%      773.81 μs     1173.99 μs - 6.81x slower +683.74 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks              1.01 K      993.62 μs     ±9.96%      980.20 μs     1287.18 μs - 8.45x slower +876.02 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream        0.77 K     1303.02 μs    ±10.56%     1281.68 μs     1898.00 μs - 11.08x slower +1185.42 μs
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath         0.70 K     1430.92 μs     ±8.66%     1410.52 μs     1811.16 μs - 12.17x slower +1313.32 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull           8.57 K      116.75 μs    ±64.02%       94.39 μs      399.84 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                  7.48 K      133.68 μs    ±32.09%      118.71 μs      257.07 μs - 1.14x slower +16.92 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple            7.22 K      138.57 μs    ±33.80%      122.26 μs      268.53 μs - 1.19x slower +21.82 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax             4.82 K      207.67 μs    ±25.07%      206.94 μs      358.11 μs - 1.78x slower +90.91 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple          3.98 K      251.17 μs    ±21.47%      251.73 μs      396.87 μs - 2.15x slower +134.42 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                 1.42 K      705.19 μs    ±16.46%      692.47 μs     1036.42 μs - 6.04x slower +588.44 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple           1.25 K      799.83 μs    ±14.93%      775.59 μs     1171.58 μs - 6.85x slower +683.07 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks              0.98 K     1017.63 μs    ±12.89%      993.22 μs     1635.88 μs - 8.72x slower +900.88 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream        0.77 K     1290.36 μs     ±9.53%     1274.56 μs     1717.87 μs - 11.05x slower +1173.61 μs
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath         0.71 K     1410.90 μs    ±10.90%     1391.93 μs     1938.20 μs - 12.08x slower +1294.14 μs
 
 ##### With input big #####
 Name                                                             ips        average  deviation         median         99th %
-Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull           906.00        1.10 ms    ±11.10%        1.08 ms        1.56 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                  747.89        1.34 ms     ±9.58%        1.32 ms        1.80 ms - 1.21x slower +0.23 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple            697.94        1.43 ms     ±7.02%        1.42 ms        1.73 ms - 1.30x slower +0.33 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax             501.52        1.99 ms    ±14.28%        1.94 ms        2.87 ms - 1.81x slower +0.89 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple          377.09        2.65 ms     ±9.51%        2.62 ms        3.52 ms - 2.40x slower +1.55 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                 138.16        7.24 ms     ±4.99%        7.20 ms        8.80 ms - 6.56x slower +6.13 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple           123.45        8.10 ms    ±10.07%        8.23 ms        9.91 ms - 7.34x slower +7.00 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream        118.56        8.43 ms    ±11.01%        8.22 ms       12.15 ms - 7.64x slower +7.33 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks               87.19       11.47 ms     ±3.96%       11.39 ms       13.39 ms - 10.39x slower +10.36 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath          66.99       14.93 ms     ±4.19%       14.77 ms       17.24 ms - 13.52x slower +13.82 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull           913.00        1.10 ms    ±12.63%        1.07 ms        1.75 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                  715.03        1.40 ms    ±11.98%        1.37 ms        2.14 ms - 1.28x slower +0.30 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple            677.98        1.47 ms     ±7.84%        1.46 ms        1.97 ms - 1.35x slower +0.38 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax             499.54        2.00 ms    ±13.83%        1.96 ms        2.90 ms - 1.83x slower +0.91 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple          373.39        2.68 ms     ±6.76%        2.65 ms        3.66 ms - 2.45x slower +1.58 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                 136.37        7.33 ms     ±4.69%        7.30 ms        8.77 ms - 6.70x slower +6.24 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple           123.30        8.11 ms     ±9.99%        8.23 ms        9.80 ms - 7.40x slower +7.01 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream        119.37        8.38 ms    ±10.56%        8.18 ms       11.86 ms - 7.65x slower +7.28 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks               86.02       11.62 ms     ±3.94%       11.55 ms       13.93 ms - 10.61x slower +10.53 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath          66.73       14.98 ms     ±2.88%       14.89 ms       16.71 ms - 13.68x slower +13.89 ms
 
 ##### With input huge #####
 Name                                                             ips        average  deviation         median         99th %
-Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull            17.04       58.68 ms     ±4.00%       58.66 ms       64.91 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                   13.22       75.66 ms     ±2.16%       75.11 ms       81.54 ms - 1.29x slower +16.98 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple             11.96       83.60 ms     ±2.77%       83.23 ms       88.76 ms - 1.42x slower +24.93 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax               6.90      145.02 ms     ±2.59%      143.74 ms      155.06 ms - 2.47x slower +86.34 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple            5.31      188.28 ms     ±1.62%      187.59 ms      195.84 ms - 3.21x slower +129.60 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream          2.07      482.69 ms     ±4.96%      472.55 ms      521.47 ms - 8.23x slower +424.01 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                   1.92      519.73 ms     ±0.66%      519.47 ms      524.41 ms - 8.86x slower +461.05 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple             1.69      592.43 ms     ±1.98%      587.52 ms      620.10 ms - 10.10x slower +533.76 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks                1.45      688.99 ms     ±8.39%      694.03 ms      758.79 ms - 11.74x slower +630.31 ms
-Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath           1.01      985.38 ms     ±1.28%      989.97 ms      994.75 ms - 16.79x slower +926.71 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull            16.49       60.63 ms     ±4.52%       60.59 ms       69.75 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.Saxy                   12.99       76.98 ms     ±2.12%       76.49 ms       81.09 ms - 1.27x slower +16.35 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple             11.83       84.52 ms     ±3.51%       84.16 ms       98.79 ms - 1.39x slower +23.88 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax               6.80      147.07 ms     ±2.63%      146.12 ms      161.56 ms - 2.43x slower +86.44 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple            5.34      187.43 ms     ±1.87%      186.85 ms      199.28 ms - 3.09x slower +126.80 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream          2.14      468.24 ms     ±3.97%      465.01 ms      506.71 ms - 7.72x slower +407.61 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl                   1.90      525.87 ms     ±0.77%      526.99 ms      533.50 ms - 8.67x slower +465.24 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple             1.69      592.64 ms     ±1.04%      593.07 ms      603.30 ms - 9.77x slower +532.01 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks                1.42      702.51 ms     ±9.00%      725.32 ms      762.43 ms - 11.59x slower +641.88 ms
+Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath           1.01      991.81 ms     ±1.59%      996.98 ms     1004.46 ms - 16.36x slower +931.18 ms
 ```
