@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Benchee Report</title>
+  <meta charset="utf-8">
+  <meta http-equiv="content-type" content="text/html; charset=utf8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+    <link rel="stylesheet" type="text/css" href="assets/stylesheets/benchee.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontello/css/fontello.css">
+  
+</head>
+
+  <body>
+
+    <div class="header">
+  <h1>benchee report</h1>
+  
+  <span class="input-label">
+    huge
+  </span>
+
+
+  <span class="version-note">
+  <a href="javascript:toggleSystemDataInfo();" title="Click to toggle system info">System info</a>
+</span>
+
+</div>
+
+
+    <article id="system-info" class="benchee-systeminfo" >
+  <h3>System info</h3>
+  <ul class="benchee-systeminfo-list">
+    <li>Elixir: 1.8.2</li>
+    <li>Erlang: 21.0.2</li>
+    <li>Operating system: Linux</li>
+    <li>Available memory: 15.39 GB</li>
+    <li>CPU Information: Intel(R) Core(TM) i7-7500U CPU @ 2.70GHz</li>
+    <li>Number of Available Cores: 4</li>
+  </ul>
+</article>
+
+
+    
+      <article>
+        <h2>
+          Run Time Comparison
+          <a href="https://github.com/PragTob/benchee_html/wiki/Chart-Types#comparison">
+            <i
+            class="benchee-help-icon icon-question-circle-o"
+            title="Comparisons of the different benchmarking jobs. For Iterations per Second higher is better, the black whiskers denote standard deviation. otherwise it is runtime so lower is better. The Box Plot shows a distribution of run times with the median and outliers."
+            ></i>
+          </a>
+        </h2>
+        <section>
+          <table>
+  <thead>
+    <tr>
+      <th class="text-left">Name</th>
+      
+        <th>Iterations per Second</th>
+      
+      <th>Average</th>
+      <th>Deviation</th>
+      <th>Median</th>
+      <th>Mode</th>
+      <th>Minimum</th>
+      <th>Maximum</th>
+      <th>Sample size</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_fastxmlfull.html">Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull</a></td>
+        
+        
+          <td>17.04</td>
+          <td>58.68 ms</td>
+          <td>±4.00%</td>
+          <td>58.66 ms</td>
+          <td>none</td>
+          <td>53.85 ms</td>
+          <td>64.91 ms</td>
+        
+        <td>86</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_saxy.html">Elixir.ElixirXmlParserBenchmark.Parsers.Saxy</a></td>
+        
+        
+          <td>13.22</td>
+          <td>75.66 ms</td>
+          <td>±2.16%</td>
+          <td>75.11 ms</td>
+          <td>none</td>
+          <td>74.14 ms</td>
+          <td>81.54 ms</td>
+        
+        <td>67</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_saxysimple.html">Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple</a></td>
+        
+        
+          <td>11.96</td>
+          <td>83.60 ms</td>
+          <td>±2.77%</td>
+          <td>83.23 ms</td>
+          <td>none</td>
+          <td>80.39 ms</td>
+          <td>88.76 ms</td>
+        
+        <td>60</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_erlsomsax.html">Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax</a></td>
+        
+        
+          <td>6.90</td>
+          <td>145.02 ms</td>
+          <td>±2.59%</td>
+          <td>143.74 ms</td>
+          <td>none</td>
+          <td>140.12 ms</td>
+          <td>155.06 ms</td>
+        
+        <td>35</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_erlsomsimple.html">Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple</a></td>
+        
+        
+          <td>5.31</td>
+          <td>188.28 ms</td>
+          <td>±1.62%</td>
+          <td>187.59 ms</td>
+          <td>none</td>
+          <td>183.48 ms</td>
+          <td>195.84 ms</td>
+        
+        <td>27</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_sweetxmlstream.html">Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream</a></td>
+        
+        
+          <td>2.07</td>
+          <td>482.69 ms</td>
+          <td>±4.96%</td>
+          <td>472.55 ms</td>
+          <td>none</td>
+          <td>454.06 ms</td>
+          <td>521.47 ms</td>
+        
+        <td>11</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_xmerl.html">Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl</a></td>
+        
+        
+          <td>1.92</td>
+          <td>519.73 ms</td>
+          <td>±0.66%</td>
+          <td>519.47 ms</td>
+          <td>none</td>
+          <td>514.82 ms</td>
+          <td>524.41 ms</td>
+        
+        <td>10</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_xmerlsimple.html">Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple</a></td>
+        
+        
+          <td>1.69</td>
+          <td>592.43 ms</td>
+          <td>±1.98%</td>
+          <td>587.52 ms</td>
+          <td>none</td>
+          <td>583.62 ms</td>
+          <td>620.10 ms</td>
+        
+        <td>9</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_meeseeks.html">Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks</a></td>
+        
+        
+          <td>1.45</td>
+          <td>688.99 ms</td>
+          <td>±8.39%</td>
+          <td>694.03 ms</td>
+          <td>none</td>
+          <td>600.40 ms</td>
+          <td>758.79 ms</td>
+        
+        <td>8</td>
+      </tr>
+    
+      
+      <tr>
+        
+          <td class="text-left"><a href="results_huge_elixir_elixirxmlparserbenchmark_parsers_sweetxmlxpath.html">Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath</a></td>
+        
+        
+          <td>1.01</td>
+          <td>985.38 ms</td>
+          <td>±1.28%</td>
+          <td>989.97 ms</td>
+          <td>none</td>
+          <td>960.27 ms</td>
+          <td>994.75 ms</td>
+        
+        <td>6</td>
+      </tr>
+    
+  </tbody>
+</table>
+
+        </section>
+
+        <section class="benchee-plot-container">
+          <div id="ips-comparison" class=" plot"></div>
+        </section>
+
+        <section class="benchee-plot-container">
+          <div id="run-time-box-plot" class=" plot"></div>
+        </section>
+      </article>
+    
+
+    
+
+    <footer>
+      <a href="https://github.com/PragTob/benchee" target="blank">benchee version: 1.0.1 </a>
+<br/>
+<a href="https://github.com/PragTob/benchee_html" target="blank">benchee_html version: 1.0.0</a>
+
+
+    </footer>
+
+    
+  <script src="assets/javascripts/plotly-1.30.1.min.js"></script>
+  <script src="assets/javascripts/benchee.js"></script>
+
+
+
+    <script>
+      var scenarios     = [{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.FastXmlFull","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":null,"average":58675231.255813956,"ips":17.04296648853707,"maximum":64914911.0,"median":58656528.5,"minimum":53854430.0,"mode":null,"percentiles":{"50":58656528.5,"99":64914911.0},"relative_less":null,"relative_more":null,"sample_size":86,"std_dev":2347865.0140089556,"std_dev_ips":0.6819672270042961,"std_dev_ratio":0.040014584753363246},"samples":[62312963.0,56793034.0,60745896.0,56910819.0,57676367.0,58916122.0,60605019.0,60871153.0,59456360.0,64153052.0,57373182.0,54915419.0,57353980.0,58409447.0,54528238.0,54841749.0,54545651.0,57224154.0,58403676.0,58888338.0,59205484.0,61365212.0,56968954.0,54618765.0,58163817.0,58189286.0,59154268.0,60334966.0,59533393.0,57000138.0,60080808.0,61185134.0,56265546.0,57740281.0,58596810.0,57002313.0,60636939.0,60529347.0,60010241.0,62212059.0,56315259.0,56572210.0,61000652.0,64914911.0,61002775.0,63356258.0,58842644.0,56983292.0,59044629.0,61732998.0,56202642.0,59216541.0,58173403.0,57875317.0,56708239.0,57693492.0,53854430.0,56298007.0,55703789.0,55137228.0,60174102.0,62573027.0,56453470.0,59563455.0,58716247.0,56262334.0,59445857.0,60665722.0,56396530.0,58956672.0,59364952.0,57399161.0,59228789.0,61389472.0,56499075.0,56050409.0,57508803.0,57705388.0,60769629.0,60303168.0,61869977.0,61688112.0,57139071.0,57333861.0,60579710.0,61685799.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.Saxy","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.Saxy","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":16981023.41582784,"average":75656254.6716418,"ips":13.217677829019332,"maximum":81539750.0,"median":75105003.0,"minimum":74138963.0,"mode":null,"percentiles":{"50":75105003.0,"99":81539750.0},"relative_less":0.7755503032825543,"relative_more":1.2894070130170172,"sample_size":67,"std_dev":1630806.469706373,"std_dev_ips":0.2849133176313424,"std_dev_ratio":0.02155547451805921},"samples":[75188689.0,75105003.0,75125827.0,74963237.0,74308983.0,75270598.0,74433971.0,74920115.0,77254535.0,75535890.0,76803924.0,75704938.0,74331939.0,74651634.0,76023014.0,75409735.0,74898511.0,74246518.0,75009956.0,75199544.0,74556229.0,74494134.0,76030561.0,76128051.0,81539750.0,74138963.0,74887258.0,74736722.0,74936533.0,76005950.0,74198552.0,74871314.0,74813076.0,75043782.0,74791309.0,74667808.0,75036371.0,80933064.0,77911651.0,75421167.0,74324231.0,76139709.0,74258646.0,74570834.0,75156607.0,74863544.0,75451507.0,74725294.0,78899481.0,80181678.0,80681303.0,78262557.0,74618152.0,74754389.0,75021957.0,76124467.0,75421834.0,75461547.0,75272802.0,75023091.0,75132426.0,76737636.0,75037372.0,77537862.0,75760120.0,74876797.0,75144414.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.SaxySimple","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":24929305.92751938,"average":83604537.18333334,"ips":11.961073330352114,"maximum":88759682.0,"median":83226478.5,"minimum":80388983.0,"mode":null,"percentiles":{"50":83226478.5,"99":88759682.0},"relative_less":0.701818743726159,"relative_more":1.4248693255052014,"sample_size":60,"std_dev":2316713.8957171645,"std_dev_ips":0.33144594451080606,"std_dev_ratio":0.027710384792118722},"samples":[80511861.0,80720424.0,81408592.0,82131218.0,83319979.0,87529672.0,87740671.0,88759682.0,81536923.0,82126076.0,81675070.0,81165285.0,85381597.0,81179568.0,80708157.0,81546962.0,80826524.0,82162710.0,83418047.0,86006832.0,83132978.0,81780483.0,85590405.0,81574723.0,82119073.0,80388983.0,81850029.0,82439874.0,82046698.0,82202075.0,86920180.0,88532429.0,88528615.0,87016661.0,85662791.0,81499592.0,84664539.0,83399168.0,81267231.0,83633356.0,85230255.0,83595996.0,8.49621e7,87250407.0,81769074.0,81238957.0,83425313.0,85876799.0,85324701.0,84948122.0,84619268.0,82433893.0,83124882.0,84280662.0,81304864.0,84643827.0,81865046.0,84965055.0,86062643.0,85244634.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSax","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":86341879.51561463,"average":145017110.77142859,"ips":6.895737990368382,"maximum":155062349.0,"median":143739581.0,"minimum":140118313.0,"mode":null,"percentiles":{"50":143739581.0,"99":155062349.0},"relative_less":0.4046090212643666,"relative_more":2.4715217591419254,"sample_size":35,"std_dev":3751486.3728675917,"std_dev_ips":0.17838768793640264,"std_dev_ratio":0.025869267101732336},"samples":[140118313.0,142554692.0,141331339.0,145356154.0,143123351.0,149489263.0,143029651.0,140927418.0,147044335.0,143411416.0,143126685.0,152849615.0,153753023.0,143494302.0,141392998.0,144067860.0,144243936.0,144492653.0,143936172.0,155062349.0,143384612.0,142678780.0,143998678.0,147165245.0,142607178.0,142606549.0,150945992.0,142673229.0,142895776.0,1.477213e8,143739581.0,143778551.0,143463881.0,151228183.0,143905817.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.ErlsomSimple","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":129604006.18863049,"average":188279237.44444445,"ips":5.311260092048492,"maximum":195842454.0,"median":187586889.0,"minimum":183483103.0,"mode":null,"percentiles":{"50":187586889.0,"99":195842454.0},"relative_less":0.311639414160721,"relative_more":3.2088367342529804,"sample_size":27,"std_dev":3048259.724317572,"std_dev_ips":0.08598983320581947,"std_dev_ratio":0.01619010022396666},"samples":[187699401.0,191429519.0,185961049.0,190855724.0,188981757.0,188389154.0,185393889.0,187189591.0,186621004.0,186552973.0,184763340.0,187328119.0,190528191.0,187586889.0,194221036.0,183483103.0,191608042.0,190532026.0,190139445.0,195842454.0,186285336.0,186415226.0,185687406.0,188859202.0,191445604.0,185834935.0,183904996.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlStream","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":424012473.4714588,"average":482687704.72727275,"ips":2.071732903503349,"maximum":521466721.0,"median":472551325.0,"minimum":454060741.0,"mode":null,"percentiles":{"50":472551325.0,"99":521466721.0},"relative_less":0.12155940721333791,"relative_more":8.226430376095784,"sample_size":11,"std_dev":23922868.311430983,"std_dev_ips":0.10267879819928805,"std_dev_ratio":0.049561793426969175},"samples":[460025468.0,472551325.0,471943321.0,513154962.0,490660941.0,454060741.0,515066184.0,477999566.0,460408647.0,472226876.0,521466721.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.Xmerl","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":461051063.84418607,"average":519726295.1,"ips":1.924089678409654,"maximum":524405536.0,"median":519472307.5,"minimum":514817952.0,"mode":null,"percentiles":{"50":519472307.5,"99":524405536.0},"relative_less":0.11289640683761115,"relative_more":8.857677830600828,"sample_size":10,"std_dev":3433238.234898535,"std_dev_ips":0.012710263678343664,"std_dev_ratio":0.006605858251289651},"samples":[518084495.0,516740504.0,516172416.0,523001166.0,514817952.0,523660845.0,517715063.0,521804854.0,520860120.0,524405536.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.XmerlSimple","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":533757621.6330749,"average":592432852.8888888,"ips":1.6879550064174964,"maximum":620101095.0,"median":587524803.0,"minimum":583620704.0,"mode":null,"percentiles":{"50":587524803.0,"99":620101095.0},"relative_less":0.09904115035095552,"relative_more":10.096813258493743,"sample_size":9,"std_dev":11703339.139741406,"std_dev_ips":0.03334506146375605,"std_dev_ratio":0.01975470989272834},"samples":[585610771.0,584814170.0,585085089.0,583620704.0,589456694.0,598967774.0,596714576.0,620101095.0,587524803.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.Meeseeks","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":630312925.494186,"average":688988156.75,"ips":1.4514037581096637,"maximum":758788493.0,"median":694026223.5,"minimum":600399684.0,"mode":null,"percentiles":{"50":694026223.5,"99":758788493.0},"relative_less":0.08516145115264197,"relative_more":11.742402066489175,"sample_size":8,"std_dev":57817524.82844664,"std_dev_ips":0.12179682915951116,"std_dev_ratio":0.08391657282060624},"samples":[758788493.0,719975825.0,610699962.0,600399684.0,747826163.0,686162680.0,688104938.0,699947509.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null},{"name":"Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath","job_name":"Elixir.ElixirXmlParserBenchmark.Parsers.SweetXmlXpath","input_name":"huge","run_time_data":{"statistics":{"absolute_difference":926707951.4108527,"average":985383182.6666666,"ips":1.0148336379090386,"maximum":994754749.0,"median":989970704.0,"minimum":960274585.0,"mode":null,"percentiles":{"50":989970704.0,"99":994754749.0},"relative_less":0.059545598390491804,"relative_more":16.793852560556,"sample_size":6,"std_dev":12588235.196030963,"std_dev_ips":0.012964463716816029,"std_dev_ratio":0.012774964518842701},"samples":[960274585.0,990145613.0,989795795.0,990941089.0,986387265.0,994754749.0]},"memory_usage_data":{"statistics":{"absolute_difference":null,"average":null,"ips":null,"maximum":null,"median":null,"minimum":null,"mode":null,"percentiles":null,"relative_less":null,"relative_more":null,"sample_size":0,"std_dev":null,"std_dev_ips":null,"std_dev_ratio":null},"samples":[]},"tag":null}];
+      var inputHeadline = " (huge)";
+
+      
+        drawIpsComparisonChart(scenarios, inputHeadline);
+        drawRunTimeComparisonBoxPlot(scenarios, inputHeadline);
+      
+
+      
+    </script>
+  </body>
+</html>

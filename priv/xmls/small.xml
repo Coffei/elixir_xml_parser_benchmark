@@ -1,0 +1,8 @@
+<trains>
+    <train active="true">
+        <id>1</id>
+    </train>
+    <train active="false">
+        <id>2</id>
+    </train>
+</trains>
